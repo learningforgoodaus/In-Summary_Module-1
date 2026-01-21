@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Before You Begin</title>
+    <title>In Summary - Training Key Points</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* Use Helvetica font as requested */
         body {
-            font-family: 'Helvetica', 'Inter', sans-serif;
-            /* Using a light background from your brand palette */
+            font-family: 'Helvetica', 'Arial', sans-serif;
             background-color: #F2F2F2;
         }
     </style>
     <script>
-        // Configuration for Tailwind
+        // Configuration for Tailwind to match brand identity
         tailwind.config = {
             theme: {
                 extend: {
@@ -31,161 +30,118 @@
         }
     </script>
 </head>
-<body class="antialiased text-brand-med-purple">
+<body class="antialiased text-brand-med-purple min-h-screen">
 
     <div class="container mx-auto max-w-3xl p-4 sm:p-6 md:p-8">
         
         <!-- Activity Title -->
-        <header class="mb-8 p-6 md:p-8 rounded-xl bg-brand-dark-purple text-white">
+        <header class="mb-6 p-6 md:p-8 rounded-xl bg-brand-dark-purple text-white shadow-sm">
             <h1 class="text-3xl font-bold">In Summary</h1>
-            <p class="mt-2 text-lg text-brand-light-purple">Key points to remember.</p>
+            <p class="mt-2 text-lg text-brand-light-purple">Key points to remember from this session.</p>
         </header>
 
+        <!-- Instructions -->
+        <div class="mb-6 px-2">
+            <p class="text-sm text-gray-600 italic font-medium">Select each item to check it off as you reflect.</p>
+        </div>
+
         <!-- Checklist Container -->
-        <div class="space-y-6">
+        <div class="space-y-8">
 
             <!-- Topic 1: Assumptions -->
-            <div>
-                <!-- Heading with Tick -->
-                <div class="flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-7 w-7 text-brand-accent mr-2 flex-shrink-0">
+            <section>
+                <div class="flex items-center mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-7 w-7 text-brand-accent mr-3 flex-shrink-0">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                     </svg>
                     <h2 class="font-bold text-xl">Your Assumptions</h2>
                 </div>
-                <!-- Sub-point with Checkbox -->
-                <ul class="mt-2 pl-9 space-y-2">
-                    <!-- Make the <li> the clickable element -->
-                    <li class="flex items-start interactive-checkbox cursor-pointer">
-                        <!-- Box Icon (visible by default) -->
-                        <svg class="box-icon h-6 w-6 text-gray-500 mr-2 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <ul class="pl-10">
+                    <li class="flex items-start interactive-checkbox cursor-pointer group p-2 -ml-2 rounded-lg hover:bg-white/50 transition-colors">
+                        <!-- Box Icon -->
+                        <svg class="box-icon h-6 w-6 text-gray-400 mr-3 flex-shrink-0 mt-0.5 group-hover:text-brand-accent" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                           <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 7.5A2.25 2.25 0 0 1 7.5 5.25h9a2.25 2.25 0 0 1 2.25 2.25v9a2.25 2.25 0 0 1-2.25 2.25h-9a2.25 2.25 0 0 1-2.25-2.25v-9Z" />
                         </svg>
-                        <!-- Tick Icon (hidden by default, in dark purple) -->
-                        <svg class="tick-icon hidden h-6 w-6 text-brand-dark-purple mr-2 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
-                          <!-- This path is changed to a softer tick -->
+                        <!-- Tick Icon -->
+                        <svg class="tick-icon hidden h-6 w-6 text-brand-dark-purple mr-3 flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
                           <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                         </svg>
-                        <p class="text-gray-700">Don’t let stereotypes or personal bias affect your ability to assess a situation or a person.</p>
+                        <p class="text-gray-700 leading-relaxed">Unconscious bias and assumptions can shape how we interpret situations. They may lead to victim-blaming or minimising abuse. Being aware of these helps us respond safely and without judgment.</p>
                     </li>
                 </ul>
-            </div>
+            </section>
 
             <!-- Topic 2: Values -->
-            <div>
-                <!-- Heading with Tick -->
-                <div class="flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-7 w-7 text-brand-accent mr-2 flex-shrink-0">
+            <section>
+                <div class="flex items-center mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-7 w-7 text-brand-accent mr-3 flex-shrink-0">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                     </svg>
                     <h2 class="font-bold text-xl">Your Values</h2>
                 </div>
-                <!-- Sub-point with Checkbox -->
-                <ul class="mt-2 pl-9 space-y-2">
-                    <li class="flex items-start interactive-checkbox cursor-pointer">
-                        <!-- Box Icon (visible by default) -->
-                        <svg class="box-icon h-6 w-6 text-gray-500 mr-2 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <ul class="pl-10">
+                    <li class="flex items-start interactive-checkbox cursor-pointer group p-2 -ml-2 rounded-lg hover:bg-white/50 transition-colors">
+                        <svg class="box-icon h-6 w-6 text-gray-400 mr-3 flex-shrink-0 mt-0.5 group-hover:text-brand-accent" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                           <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 7.5A2.25 2.25 0 0 1 7.5 5.25h9a2.25 2.25 0 0 1 2.25 2.25v9a2.25 2.25 0 0 1-2.25 2.25h-9a2.25 2.25 0 0 1-2.25-2.25v-9Z" />
                         </svg>
-                        <!-- Tick Icon (hidden by default, in dark purple) -->
-                        <svg class="tick-icon hidden h-6 w-6 text-brand-dark-purple mr-2 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
-                          <!-- This path is changed to a softer tick -->
+                        <svg class="tick-icon hidden h-6 w-6 text-brand-dark-purple mr-3 flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
                           <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                         </svg>
-                        <p class="text-gray-700">Think about your own personal values. Our beliefs about privacy, family, and relationships can act like a filter and change how we see a situation. The goal here isn't to change your values, but to be aware of them.</p>
+                        <p class="text-gray-700 leading-relaxed">Our personal values such as beliefs about privacy, family, and relationships act like filters that influence how we see DFV. The goal isn’t to change your values, but to recognise how they impact your decisions and responses.</p>
                     </li>
                 </ul>
-            </div>
+            </section>
 
-            <!-- Topic 3: Wellbeing -->
-            <div>
-                <!-- Heading with Tick -->
-                <div class="flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-7 w-7 text-brand-accent mr-2 flex-shrink-0">
+            <!-- Topic 3: Principles -->
+            <section>
+                <div class="flex items-center mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="h-7 w-7 text-brand-accent mr-3 flex-shrink-0">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                     </svg>
-                    <h2 class="font-bold text-xl">Your Wellbeing</h2>
+                    <h2 class="font-bold text-xl">Your Principles</h2>
                 </div>
-                <!-- Sub-points with Checkboxes -->
-                <ul class="mt-2 pl-9 space-y-2">
-                    <li class="flex items-start interactive-checkbox cursor-pointer">
-                        <!-- Box Icon (visible by default) -->
-                        <svg class="box-icon h-6 w-6 text-gray-500 mr-2 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <ul class="pl-10">
+                    <li class="flex items-start interactive-checkbox cursor-pointer group p-2 -ml-2 rounded-lg hover:bg-white/50 transition-colors">
+                        <svg class="box-icon h-6 w-6 text-gray-400 mr-3 flex-shrink-0 mt-0.5 group-hover:text-brand-accent" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                           <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 7.5A2.25 2.25 0 0 1 7.5 5.25h9a2.25 2.25 0 0 1 2.25 2.25v9a2.25 2.25 0 0 1-2.25 2.25h-9a2.25 2.25 0 0 1-2.25-2.25v-9Z" />
                         </svg>
-                        <!-- Tick Icon (hidden by default, in dark purple) -->
-                        <svg class="tick-icon hidden h-6 w-6 text-brand-dark-purple mr-2 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
-                          <!-- This path is changed to a softer tick -->
+                        <svg class="tick-icon hidden h-6 w-6 text-brand-dark-purple mr-3 flex-shrink-0 mt-0.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
                           <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                         </svg>
-                        <p class="text-gray-700">This content can be distressing, especially if you or someone you know has been affected by domestic and family violence.</p>
-                    </li>
-                    <li class="flex items-start interactive-checkbox cursor-pointer">
-                        <!-- Box Icon (visible by default) -->
-                        <svg class="box-icon h-6 w-6 text-gray-500 mr-2 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 7.5A2.25 2.25 0 0 1 7.5 5.25h9a2.25 2.25 0 0 1 2.25 2.25v9a2.25 2.25 0 0 1-2.25 2.25h-9a2.25 2.25 0 0 1-2.25-2.25v-9Z" />
-                        </svg>
-                        <!-- Tick Icon (hidden by default, in dark purple) -->
-                        <svg class="tick-icon hidden h-6 w-6 text-brand-dark-purple mr-2 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
-                          <!-- This path is changed to a softer tick -->
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <p class="text-gray-700">Recognise your own signs of distress. This could be feeling sad, anxious, angry, or just needing a break.</p>
-                    </li>
-                    <li class="flex items-start interactive-checkbox cursor-pointer">
-                        <!-- Box Icon (visible by default) -->
-                        <svg class="box-icon h-6 w-6 text-gray-500 mr-2 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 7.5A2.25 2.25 0 0 1 7.5 5.25h9a2.25 2.25 0 0 1 2.25 2.25v9a2.25 2.25 0 0 1-2.25 2.25h-9a2.25 2.25 0 0 1-2.25-2.25v-9Z" />
-                        </svg>
-                        <!-- Tick Icon (hidden by default, in dark purple) -->
-                        <svg class="tick-icon hidden h-6 w-6 text-brand-dark-purple mr-2 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
-                          <!-- This path is changed to a softer tick -->
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <p class="text-gray-700">If you feel overwhelmed at any time, it is perfectly okay to pause and step away.</p>
-                    </li>
-                    <li class="flex items-start interactive-checkbox cursor-pointer">
-                        <!-- Box Icon (visible by default) -->
-                        <svg class="box-icon h-6 w-6 text-gray-500 mr-2 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 7.5A2.25 2.25 0 0 1 7.5 5.25h9a2.25 2.25 0 0 1 2.25 2.25v9a2.25 2.25 0 0 1-2.25 2.25h-9a2.25 2.25 0 0 1-2.25-2.25v-9Z" />
-                        </svg>
-                        <!-- Tick Icon (hidden by default, in dark purple) -->
-                        <svg class="tick-icon hidden h-6 w-6 text-brand-dark-purple mr-2 flex-shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
-                          <!-- This path is changed to a softer tick -->
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <p class="text-gray-700">Please use the Support Services list (the Your Wellbeing) provided at the start of this course if you need to talk to someone. Your wellbeing is the first priority.</p>
+                        <p class="text-gray-700 leading-relaxed">Safety First, Be Non-Judgmental, Believe and Validate, Respect Their Choices, and Confidentiality are not optional; they are essential for creating trust and keeping people safe.</p>
                     </li>
                 </ul>
-            </div>
+            </section>
 
         </div> <!-- End Checklist Container -->
+
+        <footer class="mt-12 pt-6 border-t border-gray-200">
+            <!-- Footer text removed as instruction is now at the top -->
+        </footer>
 
     </div> <!-- End Page Container -->
 
     <!-- JavaScript for interactivity -->
     <script>
-        // Wait for the document to be fully loaded
         document.addEventListener('DOMContentLoaded', () => {
-            // Find all the clickable list items
             const checkboxes = document.querySelectorAll('.interactive-checkbox');
 
             checkboxes.forEach(checkbox => {
-                // Find the icons inside this specific list item
                 const boxIcon = checkbox.querySelector('.box-icon');
                 const tickIcon = checkbox.querySelector('.tick-icon');
+                const text = checkbox.querySelector('p');
 
-                // Add a click event listener to the whole list item
                 checkbox.addEventListener('click', () => {
-                    // Toggle the 'hidden' class on both icons
+                    // Toggle visibility of icons
                     boxIcon.classList.toggle('hidden');
                     tickIcon.classList.toggle('hidden');
+                    
+                    // Optional: fade the text slightly when checked
+                    text.classList.toggle('opacity-60');
                 });
             });
         });
     </script>
 
 </body>
-
 </html>
-
